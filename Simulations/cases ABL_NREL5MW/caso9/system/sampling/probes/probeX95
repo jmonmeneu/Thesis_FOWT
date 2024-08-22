@@ -1,8 +1,8 @@
-probeX1
+probeX95
     {
           type                probes;
           functionObjectLibs ("libsampling.so");
-          name                probeX1;
+          name                probeX95;
           outputControl       $acquisitionControl;
           outputInterval       $acquisitionInterval;
           timeStart           $acquisitionStart;
@@ -14,6 +14,6 @@ probeX1
 
           probeLocations
           (
-                 (0.1 1500.1 100.1)
+                 (946.0933 1500.1 100.1)
           );
     }
