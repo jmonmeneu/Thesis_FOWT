@@ -1,0 +1,90 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : checkMesh
+Date   : Oct 07 2023
+Time   : 16:58:27
+Host   : "node-a-ac1"
+PID    : 35570
+Case   : /global-scratch/bulk_pool/jmonmeneu/caso9
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From function dlOpen(const fileName&, const bool)
+    in file POSIX.C at line 1179
+    dlopen error : /home/aero/jmonmeneu/OpenFOAM/jmonmeneu-2.4.x/platforms/linux64GccDPOpt/lib/libSOWFAincompressibleLESModels.so: undefined symbol: _ZTIN4Foam14incompressible9LESModels11GenEddyViscE
+--> FOAM Warning : 
+    From function dlLibraryTable::open(const fileName&, const bool)
+    in file db/dynamicLibrary/dlLibraryTable/dlLibraryTable.C at line 99
+    could not load "libSOWFAincompressibleLESModels.so"
+Create polyMesh for time = 0
+
+Time = 0
+
+Mesh stats
+    points:           9150701
+    faces:            27150000
+    internal faces:   26850000
+    cells:            9000000
+    faces per cell:   6
+    boundary patches: 6
+    point zones:      0
+    face zones:       0
+    cell zones:       0
+
+Overall number of cells of each type:
+    hexahedra:     9000000
+    prisms:        0
+    wedges:        0
+    pyramids:      0
+    tet wedges:    0
+    tetrahedra:    0
+    polyhedra:     0
+
+Checking topology...
+    Boundary definition OK.
+    Cell to face addressing OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+    Number of regions: 1 (OK).
+
+Checking patch topology for multiply connected surfaces...
+    Patch               Faces    Points   Surface topology                  
+    lower               90000    90601    ok (non-closed singly connected)  
+    upper               90000    90601    ok (non-closed singly connected)  
+    west                30000    30401    ok (non-closed singly connected)  
+    east                30000    30401    ok (non-closed singly connected)  
+    north               30000    30401    ok (non-closed singly connected)  
+    south               30000    30401    ok (non-closed singly connected)  
+
+Checking geometry...
+    Overall domain bounding box (0 0 0) (3000 3000 1000)
+    Mesh (non-empty, non-wedge) directions (1 1 1)
+    Mesh (non-empty) directions (1 1 1)
+    Boundary openness (0 -2.42531920473e-19 -1.03076066201e-18) OK.
+    Max cell openness = 2.48689957516e-16 OK.
+    Max aspect ratio = 1 OK.
+    Minimum face area = 100. Maximum face area = 100.  Face area magnitudes OK.
+    Min volume = 1000. Max volume = 1000.  Total volume = 9000000000.  Cell volumes OK.
+    Mesh non-orthogonality Max: 0 average: 0
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 3.63797880709e-13 OK.
+    Coupled point location match (average 1.03026405508e-14) OK.
+
+Mesh OK.
+
+End
+

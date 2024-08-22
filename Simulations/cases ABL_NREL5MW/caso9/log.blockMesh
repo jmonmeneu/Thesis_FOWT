@@ -1,0 +1,81 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : blockMesh
+Date   : Oct 07 2023
+Time   : 16:53:28
+Host   : "node-a-ac1"
+PID    : 35279
+Case   : /global-scratch/bulk_pool/jmonmeneu/caso9
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From function dlOpen(const fileName&, const bool)
+    in file POSIX.C at line 1179
+    dlopen error : /home/aero/jmonmeneu/OpenFOAM/jmonmeneu-2.4.x/platforms/linux64GccDPOpt/lib/libSOWFAincompressibleLESModels.so: undefined symbol: _ZTIN4Foam14incompressible9LESModels11GenEddyViscE
+--> FOAM Warning : 
+    From function dlLibraryTable::open(const fileName&, const bool)
+    in file db/dynamicLibrary/dlLibraryTable/dlLibraryTable.C at line 99
+    could not load "libSOWFAincompressibleLESModels.so"
+Creating block mesh from
+    "/global-scratch/bulk_pool/jmonmeneu/caso9/constant/polyMesh/blockMeshDict"
+Creating curved edges
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 0
+		Number of boundary faces : 6
+		Number of defined boundary faces : 6
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 10 .. 10
+        j : 10 .. 10
+        k : 10 .. 10
+
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (0 0 0) (3000 3000 1000)
+  nPoints: 9150701
+  nCells: 9000000
+  nFaces: 27150000
+  nInternalFaces: 26850000
+----------------
+Patches
+----------------
+  patch 0 (start: 26850000 size: 90000) name: lower
+  patch 1 (start: 26940000 size: 90000) name: upper
+  patch 2 (start: 27030000 size: 30000) name: west
+  patch 3 (start: 27060000 size: 30000) name: east
+  patch 4 (start: 27090000 size: 30000) name: north
+  patch 5 (start: 27120000 size: 30000) name: south
+
+End
+

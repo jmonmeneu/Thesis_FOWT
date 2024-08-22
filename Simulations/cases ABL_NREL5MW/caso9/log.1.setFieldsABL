@@ -1,0 +1,147 @@
+--------------------------------------------------------------------------
+WARNING: No preset parameters were found for the device that Open MPI
+detected:
+
+  Local host:            node-a-ac1
+  Device name:           mlx5_0
+  Device vendor ID:      0x02c9
+  Device vendor part ID: 4123
+
+Default device parameters will be used, which may result in lower
+performance.  You can edit any of the files specified by the
+btl_openib_device_param_files MCA parameter to set values for your
+device.
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_no_device_params_found to 0.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   node-a-ac1
+  Local device: mlx5_0
+--------------------------------------------------------------------------
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : setFieldsABL -parallel
+Date   : Oct 07 2023
+Time   : 17:26:40
+Host   : "node-a-ac1"
+PID    : 37095
+Case   : /global-scratch/bulk_pool/jmonmeneu/caso9
+nProcs : 64
+Slaves : 
+63
+(
+"node-a-ac1.37097"
+"node-a-ac1.37099"
+"node-a-ac1.37100"
+"node-a-ac1.37101"
+"node-a-ac1.37103"
+"node-a-ac1.37104"
+"node-a-ac1.37105"
+"node-a-ac1.37106"
+"node-a-ac1.37107"
+"node-a-ac1.37109"
+"node-a-ac1.37110"
+"node-a-ac1.37111"
+"node-a-ac1.37112"
+"node-a-ac1.37113"
+"node-a-ac1.37114"
+"node-a-ac1.37115"
+"node-a-ac1.37116"
+"node-a-ac1.37117"
+"node-a-ac1.37118"
+"node-a-ac1.37119"
+"node-a-ac1.37120"
+"node-a-ac1.37121"
+"node-a-ac1.37122"
+"node-a-ac1.37123"
+"node-a-ac1.37124"
+"node-a-ac1.37125"
+"node-a-ac1.37126"
+"node-a-ac1.37127"
+"node-a-ac1.37129"
+"node-a-ac1.37130"
+"node-a-ac1.37131"
+"node-a-ac1.37132"
+"node-a-ac1.37134"
+"node-a-ac1.37135"
+"node-a-ac1.37137"
+"node-a-ac1.37138"
+"node-a-ac1.37139"
+"node-a-ac1.37140"
+"node-a-ac1.37141"
+"node-a-ac1.37142"
+"node-a-ac1.37143"
+"node-a-ac1.37144"
+"node-a-ac1.37146"
+"node-a-ac1.37147"
+"node-a-ac1.37148"
+"node-a-ac1.37149"
+"node-a-ac1.37151"
+"node-a-ac1.37152"
+"node-a-ac1.37153"
+"node-a-ac1.37154"
+"node-a-ac1.37155"
+"node-a-ac1.37156"
+"node-a-ac1.37157"
+"node-a-ac1.37158"
+"node-a-ac1.37159"
+"node-a-ac1.37160"
+"node-a-ac1.37161"
+"node-a-ac1.37162"
+"node-a-ac1.37163"
+"node-a-ac1.37165"
+"node-a-ac1.37166"
+"node-a-ac1.37167"
+"node-a-ac1.37168"
+)
+
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From function dlOpen(const fileName&, const bool)
+    in file POSIX.C at line 1179
+    dlopen error : /home/aero/jmonmeneu/OpenFOAM/jmonmeneu-2.4.x/platforms/linux64GccDPOpt/lib/libSOWFAincompressibleLESModels.so: undefined symbol: _ZTIN4Foam14incompressible9LESModels11GenEddyViscE
+--> FOAM Warning : 
+    From function dlLibraryTable::open(const fileName&, const bool)
+    in file db/dynamicLibrary/dlLibraryTable/dlLibraryTable.C at line 99
+    could not load "libSOWFAincompressibleLESModels.so"
+Create mesh for time = 0
+
+Reading field U
+Reading field T
+Reading field p_rgh
+Creating/Calculating face flux field, phi...
+Reading gravitational acceleration...
+Selecting incompressible transport model Newtonian
+Creating the kinematic density field, rhok...
+u* = 0.349177287712 m/s
+Calculating wind vector...
+Updating internal U field...
+Updating internal T field...
+Updating internal p_rgh field...
+Writing field U
+Writing field T
+Writing field p_rgh
+Finalising parallel run
+[node-a-ac1:37093] 63 more processes have sent help message help-mpi-btl-openib.txt / no device params found
+[node-a-ac1:37093] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[node-a-ac1:37093] 63 more processes have sent help message help-mpi-btl-openib.txt / error in device init

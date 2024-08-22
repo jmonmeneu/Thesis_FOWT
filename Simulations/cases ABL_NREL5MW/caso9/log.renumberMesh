@@ -1,0 +1,58 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.4.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 2.4.x-2b147f41daf9
+Exec   : renumberMesh -overwrite
+Date   : Oct 07 2023
+Time   : 16:54:42
+Host   : "node-a-ac1"
+PID    : 35356
+Case   : /global-scratch/bulk_pool/jmonmeneu/caso9
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+--> FOAM Warning : 
+    From function dlOpen(const fileName&, const bool)
+    in file POSIX.C at line 1179
+    dlopen error : /home/aero/jmonmeneu/OpenFOAM/jmonmeneu-2.4.x/platforms/linux64GccDPOpt/lib/libSOWFAincompressibleLESModels.so: undefined symbol: _ZTIN4Foam14incompressible9LESModels11GenEddyViscE
+--> FOAM Warning : 
+    From function dlLibraryTable::open(const fileName&, const bool)
+    in file db/dynamicLibrary/dlLibraryTable/dlLibraryTable.C at line 99
+    could not load "libSOWFAincompressibleLESModels.so"
+Create mesh for time = 0
+
+Mesh size: 9000000
+Before renumbering :
+    band           : 90000
+    profile        : 801926910299
+
+Using default renumberMethod.
+
+Selecting renumberMethod CuthillMcKee
+
+Reading volScalarField T
+Reading volScalarField k
+Reading volScalarField p_rgh
+Reading volScalarField nuSgs
+Reading volScalarField kappat
+Reading volVectorField qwall
+Reading volVectorField U
+Reading volSymmTensorField Rwall
+
+After renumbering :
+    band           : 50100
+    profile        : 328368831703
+
+Writing mesh to "constant"
+
+End.
+
