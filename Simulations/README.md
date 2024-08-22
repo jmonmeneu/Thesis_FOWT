@@ -56,20 +56,8 @@ All to do with the simulations conducted with the original polars and no Reynold
 ### OpenFAST Model_Original
 - Folder containing the original OpenFAST model of the Mowito.
 
-### SIMULATION POSTPROCESSING
-- Folder containing all the post-processing data of the simulations performed.
-
-### SIMULATIONS
-- Folder containing all the simulation files.
-
 ### Mowito_sims
 - Excel containing a record of all the simulation data and changes between simulations up to `Mowito_Fixed_17 Surge_1 and Sway_1`.
-
-### Tools
-- Post-processing tools.
-
-### Useful Matlab Scripts
-- Same as before.
 
 ## Cases Sebastiano
 Reference cases from Sebastiano.
