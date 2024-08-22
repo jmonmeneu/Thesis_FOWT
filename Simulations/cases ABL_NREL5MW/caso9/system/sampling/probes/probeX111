@@ -1,0 +1,19 @@
+probeX111
+    {
+          type                probes;
+          functionObjectLibs ("libsampling.so");
+          name                probeX111;
+          outputControl       $acquisitionControl;
+          outputInterval       $acquisitionInterval;
+          timeStart           $acquisitionStart;
+          fields
+          (
+              U
+              T
+          );
+
+          probeLocations
+          (
+                 (1107.1134 1500.1 100.1)
+          );
+    }
